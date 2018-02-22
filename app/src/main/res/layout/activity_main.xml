@@ -5,70 +5,165 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.percy.reto2_mobile.MainActivity">
+    <ImageView
 
+        android:scaleType="fitXY"
+        android:background="@drawable/fondo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:focusableInTouchMode="true"
+        android:background="#bc282525"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                android:id="@+id/tilName"
+                >
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+                <android.support.design.widget.TextInputEditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/etName"
+                    android:gravity="center"
+                    android:hint="Nombre"
+                    android:background="@color/transparent"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"></View>
 
-    <EditText
-        android:id="@+id/etLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etName"
-        android:layout_alignStart="@+id/etName"
-        android:layout_below="@+id/etName"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                android:id="@+id/tilLastName"
+                >
 
-    <EditText
-        android:id="@+id/etPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etLastName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+                <android.support.design.widget.TextInputEditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/etLastName"
+                    android:gravity="center"
+                    android:hint="Apellidos"
+                    android:background="@color/transparent"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"></View>
 
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etPhone"
-        android:layout_alignStart="@+id/etPhone"
-        android:layout_below="@+id/etPhone"
-        android:layout_marginTop="17dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                android:id="@+id/tilPhone"
+                >
 
-    <EditText
-        android:id="@+id/etEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/etEmail"
-        android:layout_alignStart="@+id/etEmail"
-        android:layout_centerVertical="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="" />
+                <android.support.design.widget.TextInputEditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/etPhone"
+                    android:gravity="center"
+                    android:numeric="integer"
+                    android:hint="Celular"
+                    android:background="@color/transparent"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"></View>
 
-    <Button
-        android:id="@+id/btnSend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text="Enviar" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                android:id="@+id/tilEmail"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/etEmail"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:background="@color/transparent"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="230dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"></View>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/grey"
+                android:id="@+id/tilEdad"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/etEdad"
+                    android:numeric="integer"
+                    android:gravity="center"
+                    android:hint="Edad"
+                    android:background="@color/transparent"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="230dp"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"></View>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/btnSend"
+                android:layout_marginTop="10dp"
+                android:text="Enviar datos a otra actividad"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_square_facebook"
+                android:layout_width="240dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

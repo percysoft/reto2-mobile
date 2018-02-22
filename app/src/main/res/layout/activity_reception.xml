@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.percy.reto2_mobile.receptionActivity">
+    <ImageView
+
+        android:scaleType="fitXY"
+        android:background="@drawable/fondo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:focusableInTouchMode="true"
+        android:background="#bc282525"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos Recibidos:"
+            android:textSize="70px"
+            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:text="Name"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edad"
+                android:textSize="50px"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/sendDates"
+                android:layout_marginTop="10dp"
+                android:text="Compartir mis datos"
+                android:textSize="16dp"
+                android:background="@drawable/button_square_facebook"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">reto2-mobile</string>
+
+
+    <string name="error_name">Es necesario ingresar nombre</string>
+    <string name="error_lastname">Es necesario apellido</string>
+    <string name="error_phone">Es necesario ingresar telefono</string>
+    <string name="error_email">Es necesario ingresar correo electronico</string>
+    <string name="error_email_invalidate">Email Invalido</string>
+    <string name="error_edad">Es necesario edad</string>
 </resources>
